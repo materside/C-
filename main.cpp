@@ -44,6 +44,11 @@ void essai_liste() {
         std::cerr << *iterator;
     }
     std::cerr << "}" << std::endl;
+
+    // Encore une autre forme d'itération (C++20)
+    for(auto&& item : list) {
+        std::cerr << item;
+    }
 }
 
 int main() {
