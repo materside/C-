@@ -34,6 +34,16 @@ void essai_liste() {
         std::cerr << "Point: " << iterator->x << "," << iterator->y << std::endl;
     }
 
+    list.push_back(Point(5.0,4.0));
+// Une autre forme d'itération
+    std::cerr << "{";
+    for (auto iterator(list.cbegin()); iterator != list.cend(); iterator++) {
+        if(iterator != list.cbegin()) {
+            std::cerr << ", ";
+        }
+        std::cerr << *iterator;
+    }
+    std::cerr << "}" << std::endl;
 }
 
 int main() {
